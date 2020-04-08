@@ -1,0 +1,10 @@
+---
+# defaults file for iis-myrole
+ad_username: iis_admin
+ad_passwduser: dimple@04071995
+user_required: present
+domain_admin_username: root\Node1
+domain_admin_passwd: dimple@04071995
+domain_server_fqdn: Node1.root.com
+group_to_add: Administrators
+domain_user_name: root\iis_admin

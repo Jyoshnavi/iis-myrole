@@ -1,0 +1,7 @@
+[windows]
+13.90.173.95
+[windows:vars]
+ansible_user=jyoshna
+ansible_password=dimple@04071995
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore

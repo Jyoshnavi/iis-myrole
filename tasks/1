@@ -1,0 +1,10 @@
+---
+ - name: Installing IIS
+     include_tasks: 
+       file: iis_install.yml
+ - name: creating iis_admin user and giving admin access
+     include_tasks: 
+       file: user.yml
+ - name: Deploying the websites on Remote
+     include_tasks:
+       file: deployment.yml

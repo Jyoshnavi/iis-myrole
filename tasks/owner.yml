@@ -1,0 +1,6 @@
+---
+ - name: setting iis_admin as owner
+   win_owner:
+     path: C:\Inetpub\wwwroot\
+     user: root\iis_admin
+     recurse: yes
