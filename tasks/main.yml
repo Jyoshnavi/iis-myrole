@@ -2,7 +2,7 @@
  - name: Installing IIS
    include_tasks: iis_install.yml
  - name: creating iis_admin user and giving admin access
-   include_tasks:  user.yml
+   include_tasks: user.yml
  - name: Deploying the websites on Remote
    include_tasks: deployment.yml
  - name: setting the owner for index.html and facts.html

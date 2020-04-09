@@ -1,15 +1,15 @@
 ---
  - name: Ensure that user iis_admmin is created with the credentials
    win_domain_user:
-     name: '{{ ad_username }}'
-     password: '{{ ad_passwduser }}'
-     state: '{{ user_required }}'
-     domain_username: '{{ domain_admin_username }}'
-     domain_password: '{{ domain_admin_passwd }}'
-     domain_server: '{{ domain_server_fqdn }}'
+     name: '{{ domain_username }}'
+     password: '{{ domain_passwduser }}'
+     state: '{{ user_required_state }}'
+     domain_username: '{{ domain_win_username }}'
+     domain_password: '{{ domain_win_passwd }}'
+     domain_server: '{{ domain_win_fqdn }}'
  - name: allow remote access to iis_admin
    win_group_membership:
-     name: '{{ group_to_add }}'
+     name: '{{ rdp_group_to_add }}'
      members:
-       - '{{ domain_user_name }}'
-     state: present
+       - '{{ domain_rdp_username }}'
+     state: '{{ user_req }}'

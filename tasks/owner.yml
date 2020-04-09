@@ -1,6 +1,6 @@
 ---
  - name: setting iis_admin as owner
    win_owner:
-     path: C:\Inetpub\wwwroot\
-     user: root\iis_admin
+     path: C:\inetpub\wwwroot\ 
+     user: '{{ remote_username }}'
      recurse: yes

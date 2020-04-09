@@ -1,7 +1,0 @@
-- name: Creating permissions for iis-myrole
-  cs_role_permission:
-    role: iis-myrole
-    name: owner
-    permission: allow
-    description: My comments
-  delegate_to: localhost

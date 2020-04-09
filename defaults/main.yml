@@ -1,10 +1,13 @@
----
-# defaults file for iis-myrole
-ad_username: iis_admin
-ad_passwduser: dimple@04071995
-user_required: present
-domain_admin_username: root\Node1
-domain_admin_passwd: dimple@04071995
-domain_server_fqdn: Node1.root.com
-group_to_add: Administrators
-domain_user_name: root\iis_admin
+#variables of user.yml
+domain_username: iis_admin
+domain_passwduser: dimple@04071995
+user_required_state: present
+domain_win_username: root\Node1
+domain_win_passwd: dimple@04071995
+domain_win_fqdn: Node1.root.com
+rdp_group_to_add: Administrators
+domain_rdp_username: root\iis_admin
+user_req: present
+
+#variables for owner.yml
+remote_username: root\iis_admin
